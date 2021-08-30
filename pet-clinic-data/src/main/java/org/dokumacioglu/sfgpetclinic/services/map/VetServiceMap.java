@@ -2,10 +2,10 @@ package org.dokumacioglu.sfgpetclinic.services.map;
 
 import org.dokumacioglu.sfgpetclinic.models.Speciality;
 import org.dokumacioglu.sfgpetclinic.models.Vet;
-import org.dokumacioglu.sfgpetclinic.services.SpecialityService;
+import org.dokumacioglu.sfgpetclinic.services.interfaces.SpecialityService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-import org.dokumacioglu.sfgpetclinic.services.VetService;
+import org.dokumacioglu.sfgpetclinic.services.interfaces.VetService;
 
 import java.util.Set;
 

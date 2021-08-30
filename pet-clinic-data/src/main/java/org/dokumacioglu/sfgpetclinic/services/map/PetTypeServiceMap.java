@@ -1,7 +1,7 @@
 package org.dokumacioglu.sfgpetclinic.services.map;
 
 import org.dokumacioglu.sfgpetclinic.models.PetType;
-import org.dokumacioglu.sfgpetclinic.services.PetTypeService;
+import org.dokumacioglu.sfgpetclinic.services.interfaces.PetTypeService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 

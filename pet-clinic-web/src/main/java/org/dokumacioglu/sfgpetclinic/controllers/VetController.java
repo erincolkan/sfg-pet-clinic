@@ -1,6 +1,6 @@
 package org.dokumacioglu.sfgpetclinic.controllers;
 
-import org.dokumacioglu.sfgpetclinic.services.VetService;
+import org.dokumacioglu.sfgpetclinic.services.interfaces.VetService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

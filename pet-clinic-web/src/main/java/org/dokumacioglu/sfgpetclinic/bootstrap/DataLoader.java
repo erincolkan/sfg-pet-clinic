@@ -1,12 +1,9 @@
 package org.dokumacioglu.sfgpetclinic.bootstrap;
 
 import org.dokumacioglu.sfgpetclinic.models.*;
-import org.dokumacioglu.sfgpetclinic.services.PetTypeService;
-import org.dokumacioglu.sfgpetclinic.services.SpecialityService;
+import org.dokumacioglu.sfgpetclinic.services.interfaces.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import org.dokumacioglu.sfgpetclinic.services.OwnerService;
-import org.dokumacioglu.sfgpetclinic.services.VetService;
 
 import java.time.LocalDate;
 import java.util.HashSet;
@@ -56,7 +53,7 @@ public class DataLoader implements CommandLineRunner {
         mikePet.setOwner(owner1);
         mikePet.setBirthDate(LocalDate.now());
         mikePet.setName("Rosco");
-        owner1.getPets().add(mikePet);
+        owner1.addPet(mikePet);
 
         ownerService.save(owner1);
 
@@ -72,7 +69,7 @@ public class DataLoader implements CommandLineRunner {
         fionaCat.setOwner(owner2);
         fionaCat.setBirthDate(LocalDate.now());
         fionaCat.setPetType(savedCatType);
-        owner2.getPets().add(fionaCat);
+        owner2.addPet(fionaCat);
 
         ownerService.save(owner2);
 

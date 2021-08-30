@@ -4,16 +4,13 @@ import org.dokumacioglu.sfgpetclinic.models.Owner;
 import org.dokumacioglu.sfgpetclinic.repositories.owner.OwnerRepository;
 import org.dokumacioglu.sfgpetclinic.repositories.pet.PetRepository;
 import org.dokumacioglu.sfgpetclinic.repositories.pettype.PetTypeRepository;
-import org.dokumacioglu.sfgpetclinic.services.OwnerService;
+import org.dokumacioglu.sfgpetclinic.services.interfaces.OwnerService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.List;
-import java.util.Optional;
 import java.util.Set;
-import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
 
 @Service
 @Profile({"springdatajpa"})

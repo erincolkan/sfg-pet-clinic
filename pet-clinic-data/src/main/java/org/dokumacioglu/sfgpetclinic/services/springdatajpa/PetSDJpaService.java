@@ -1,12 +1,18 @@
 package org.dokumacioglu.sfgpetclinic.services.springdatajpa;
 
+import lombok.extern.slf4j.Slf4j;
 import org.dokumacioglu.sfgpetclinic.models.Pet;
 import org.dokumacioglu.sfgpetclinic.repositories.pet.PetRepository;
-import org.dokumacioglu.sfgpetclinic.services.PetService;
+import org.dokumacioglu.sfgpetclinic.services.interfaces.PetService;
+import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.HashSet;
+import java.util.Optional;
 import java.util.Set;
 
+@Slf4j
+@Service
 public class PetSDJpaService implements PetService {
     private final PetRepository petRepository;
 

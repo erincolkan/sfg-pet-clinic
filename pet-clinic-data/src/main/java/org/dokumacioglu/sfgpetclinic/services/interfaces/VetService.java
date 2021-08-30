@@ -1,4 +1,4 @@
-package org.dokumacioglu.sfgpetclinic.services;
+package org.dokumacioglu.sfgpetclinic.services.interfaces;
 
 import org.dokumacioglu.sfgpetclinic.models.Vet;
 

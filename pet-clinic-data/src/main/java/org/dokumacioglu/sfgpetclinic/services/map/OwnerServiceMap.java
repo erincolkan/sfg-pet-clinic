@@ -2,16 +2,14 @@ package org.dokumacioglu.sfgpetclinic.services.map;
 
 import org.dokumacioglu.sfgpetclinic.models.Owner;
 import org.dokumacioglu.sfgpetclinic.models.Pet;
-import org.dokumacioglu.sfgpetclinic.models.PetType;
-import org.dokumacioglu.sfgpetclinic.services.PetService;
-import org.dokumacioglu.sfgpetclinic.services.PetTypeService;
+import org.dokumacioglu.sfgpetclinic.services.interfaces.PetService;
+import org.dokumacioglu.sfgpetclinic.services.interfaces.PetTypeService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-import org.dokumacioglu.sfgpetclinic.services.OwnerService;
+import org.dokumacioglu.sfgpetclinic.services.interfaces.OwnerService;
 
 import java.util.List;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 @Service
 @Profile({"default", "map"})

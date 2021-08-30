@@ -3,7 +3,7 @@ package org.dokumacioglu.sfgpetclinic.services.map;
 import org.dokumacioglu.sfgpetclinic.models.Pet;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-import org.dokumacioglu.sfgpetclinic.services.PetService;
+import org.dokumacioglu.sfgpetclinic.services.interfaces.PetService;
 
 import java.util.Set;
 

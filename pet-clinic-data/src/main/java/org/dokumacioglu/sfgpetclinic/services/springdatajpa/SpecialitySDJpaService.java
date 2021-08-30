@@ -2,7 +2,7 @@ package org.dokumacioglu.sfgpetclinic.services.springdatajpa;
 
 import org.dokumacioglu.sfgpetclinic.models.Speciality;
 import org.dokumacioglu.sfgpetclinic.repositories.speciality.SpecialityRepository;
-import org.dokumacioglu.sfgpetclinic.services.SpecialityService;
+import org.dokumacioglu.sfgpetclinic.services.interfaces.SpecialityService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 

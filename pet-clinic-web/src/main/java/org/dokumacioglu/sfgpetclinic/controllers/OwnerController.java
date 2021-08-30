@@ -1,8 +1,8 @@
 package org.dokumacioglu.sfgpetclinic.controllers;
 
 import org.dokumacioglu.sfgpetclinic.models.Owner;
-import org.dokumacioglu.sfgpetclinic.services.OwnerService;
-import org.dokumacioglu.sfgpetclinic.services.VisitService;
+import org.dokumacioglu.sfgpetclinic.services.interfaces.OwnerService;
+import org.dokumacioglu.sfgpetclinic.services.interfaces.VisitService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;

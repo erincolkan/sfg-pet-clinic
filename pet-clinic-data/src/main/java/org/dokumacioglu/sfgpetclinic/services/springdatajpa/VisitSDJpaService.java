@@ -3,14 +3,13 @@ package org.dokumacioglu.sfgpetclinic.services.springdatajpa;
 
 import org.dokumacioglu.sfgpetclinic.models.Visit;
 import org.dokumacioglu.sfgpetclinic.repositories.visit.VisitRepository;
-import org.dokumacioglu.sfgpetclinic.services.VisitService;
+import org.dokumacioglu.sfgpetclinic.services.interfaces.VisitService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
 @Service

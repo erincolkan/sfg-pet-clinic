@@ -1,15 +1,12 @@
 package org.dokumacioglu.sfgpetclinic.services.springdatajpa;
 
 import org.dokumacioglu.sfgpetclinic.models.Vet;
-import org.dokumacioglu.sfgpetclinic.repositories.speciality.SpecialityRepository;
 import org.dokumacioglu.sfgpetclinic.repositories.vet.VetRepository;
-import org.dokumacioglu.sfgpetclinic.services.VetService;
+import org.dokumacioglu.sfgpetclinic.services.interfaces.VetService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @Service
