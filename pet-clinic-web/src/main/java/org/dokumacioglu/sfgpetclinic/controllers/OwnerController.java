@@ -1,10 +1,8 @@
 package org.dokumacioglu.sfgpetclinic.controllers;
 
 import org.dokumacioglu.sfgpetclinic.models.Owner;
-import org.dokumacioglu.sfgpetclinic.models.Pet;
 import org.dokumacioglu.sfgpetclinic.services.OwnerService;
 import org.dokumacioglu.sfgpetclinic.services.VisitService;
-import org.h2.engine.Mode;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -86,7 +84,7 @@ public class OwnerController {
     }
 
     @PostMapping("/owners/new")
-    public String processCreationForm(@Valid Owner owner, BindingResult result) {
+    public String processCreationForm(Owner owner, BindingResult result) {
         if (result.hasErrors()) {
             return VIEWS_OWNER_CREATE_OR_UPDATE_FORM;
         }
@@ -103,7 +101,7 @@ public class OwnerController {
     }
 
     @PostMapping("/owners/{ownerId}/edit")
-    public String processUpdateOwnerForm(@Valid Owner owner, BindingResult result,
+    public String processUpdateOwnerForm(Owner owner, BindingResult result,
                                          @PathVariable Long ownerId) {
         if (result.hasErrors()) {
             return VIEWS_OWNER_CREATE_OR_UPDATE_FORM;
