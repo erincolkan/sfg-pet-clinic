@@ -6,6 +6,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 @Setter
@@ -39,6 +40,12 @@ public class Pet extends BaseEntity {
         this.petType = petType;
         this.owner = owner;
         this.birthDate = birthDate;
-        this.visits = visits;
+        this.visits = Objects.requireNonNullElseGet(visits, HashSet::new);
+    }
+
+    //A little convenience method.
+    public void addVisit(Visit visit){
+        getVisits().add(visit);
+        visit.setPet(this);
     }
 }
